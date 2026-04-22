@@ -155,9 +155,9 @@ database_id = "802e8156-a175-456c-8f1e-1cbac99369d4"
 # binding = "AI"
 
 # kv config for send email verification code
-# [[kv_namespaces]]
-# binding = "KV"
-# id = "xxxx"
+[[kv_namespaces]]
+binding = "KVE"
+id = "a254c74f75ef4dc4868b40bc9c8e64f1"
 
 # ratelimit config for /api/new_address
 # [[unsafe.bindings]]
