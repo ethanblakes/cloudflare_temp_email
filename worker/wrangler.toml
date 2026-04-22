@@ -10,9 +10,9 @@ keep_vars = true
 
 # if you want deploy worker with frontend assets, you need to add assets
 # [assets]
-# directory = "../frontend/dist/"
-# binding = "ASSETS"
-# run_worker_first = true
+directory = "../frontend/dist/"
+binding = "ASSETS"
+run_worker_first = true
 
 # enable cron if you want set auto clean up
 # [triggers]
@@ -29,7 +29,7 @@ keep_vars = true
 # ANNOUNCEMENT = "Custom Announcement"
 # always show ANNOUNCEMENT even no changes
 # ALWAYS_SHOW_ANNOUNCEMENT = true
-PREFIX = "tmp"
+# PREFIX = "tmp"
 # address check REGEX, if not set, will not check
 # ADDRESS_CHECK_REGEX = "^(?!.*admin).*"
 # address name replace REGEX, if not set, the default is [^a-z0-9]
@@ -42,15 +42,15 @@ PREFIX = "tmp"
 # IF YOU WANT TO MAKE YOUR SITE PRIVATE, UNCOMMENT THE FOLLOWING LINES
 # PASSWORDS = ["123", "456"]
 # For admin panel
-# ADMIN_PASSWORDS = ["123", "456"]
+ADMIN_PASSWORDS = ["ppzhuya"]
 # warning: no password or user check for admin portal
 # DISABLE_ADMIN_PASSWORD_CHECK = false
 # ADMIN CONTACT, CAN BE ANY STRING
 # ADMIN_CONTACT = "xx@xx.xxx"
 # Create new address with default domain first, if set true, will use first domain from DEFAULT_DOMAINS when no domain specified
 # CREATE_ADDRESS_DEFAULT_DOMAIN_FIRST = false
-DEFAULT_DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # domain name for no role users
-DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # all domain names
+DEFAULT_DOMAINS = ["ethanblake.site"] # domain name for no role users
+DOMAINS = ["ethanblake.site"] # all domain names
 # Allow /api/new_address and /admin/new_address to accept subdomains that end with an allowed base domain
 # e.g. if DOMAINS contains "abc.com", API can accept "team.abc.com" and "dev.team.abc.com"
 # ENABLE_CREATE_ADDRESS_SUBDOMAIN_MATCH = true
@@ -67,7 +67,7 @@ DOMAINS = ["xxx.xxx1" , "xxx.xxx2"] # all domain names
 #    { domains = ["xxx.xxx1" , "xxx.xxx2"], role = "vip", prefix = "vip" },
 #    { domains = ["xxx.xxx1" , "xxx.xxx2"], role = "admin", prefix = "" },
 # ]
-JWT_SECRET = "xxx"
+JWT_SECRET = "124306307b8d237a46f312afcf8337e1434cff4011356362f6eecb8ae121d7dc"
 BLACK_LIST = ""
 # Allow users to create email addresses
 ENABLE_USER_CREATE_EMAIL = true
@@ -146,9 +146,9 @@ ENABLE_AUTO_REPLY = false
 # """
 
 [[d1_databases]]
-binding = "DB"
-database_name = "xxx"
-database_id = "xxx"
+binding = "DBE"
+database_name = "ethanblake"
+database_id = "802e8156-a175-456c-8f1e-1cbac99369d4"
 
 # Workers AI binding (required for AI email extraction)
 # [ai]
